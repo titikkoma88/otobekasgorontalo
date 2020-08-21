@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins';
+}
+
+.navbar {
+    background-color: #171717;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+.nav-item.active a {
+    color: #F9B234 !important;
+    font-weight: 600;
+}
+
+.home {
+    height: 600px;
+    background-color: #000;
+    color: white;
+    background-image: url(/img/hero/hero_image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home p {
+    margin-top: 220px;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.home a {
+    cursor: pointer;
+    background-color: #F9B234;
+    border: 1px solid #fff;
+}
+
+.category h4,
+.popular h4 {
+    font-family: 'Lora';
+    color: #1B2690;
+    font-weight: bold;
+}
+
+.figure h6 {
+    color: #171717;
+}
+
+.figure-img {
+    position: relative;
+}
+
+.figure-img a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.figure-img:hover a {
+    opacity: 1;
+}
+
+.figure-caption .viewers {
+    font-size: 11px;
+    margin-top: -9px;
+    margin-bottom: 5px;
+    margin-left: -75px;
+    color: #171717;
+}
+
+.popular p,
+footer p {
+    font-weight: 200;
+    color: #b7b7b7;
+}
