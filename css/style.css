@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-    background-color: #171717;
+    background-color: #000;
 }
 
 .nav-item {
@@ -20,7 +20,6 @@ body {
     height: 600px;
     background-color: #000;
     color: white;
-    background-image: url('../img/hero/hero_image.png');
     background-repeat: no-repeat;
     background-position: center;
 }

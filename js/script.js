@@ -22,3 +22,13 @@ $('.nav-item').on('click', function() {
     $(this).addClass('active');
 
 });
+
+$(document).ready(function() {
+
+    // Scroll spy
+    $('body').scrollspy({
+        target: "#main-nav",
+        offset: 60
+    });
+
+});
