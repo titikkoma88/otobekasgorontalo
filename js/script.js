@@ -32,3 +32,16 @@ $(document).ready(function() {
     });
 
 });
+
+function telp() {
+    swal("Good job!", "HP 082346464631", "success");
+};
+
+$(document).ready(function() {
+    $('.xzoom, .xzoom-gallery').xzoom({
+        zoomWidth: 500,
+        title: false,
+        tint: '#333',
+        xoffset: 15
+    });
+});

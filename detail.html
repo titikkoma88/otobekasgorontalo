@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
 
+    <!-- Libraries XZoom -->
+    <link rel="stylesheet" href="xzoom/xzoom.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.css">
 
@@ -23,41 +26,32 @@
 </head>
 
 <body>
+
     <!-- Navbar -->
-    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand page-scroll" href="">
-                <img src="img/logo_small.png" alt="Oto Bekas Gorontalo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav text-uppercase mx-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link page-scroll" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="">Brands</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="">Category</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="">Contact</a>
-                    </li>
-                </ul>
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <div class="navbar-nav ml-auto mr-auto mr-sm-auto mr-lg-0 mr-md-auto">
+                <a class="navbar-brand page-scroll" href="index.html">
+                    <img src="img/logo_small.png" alt="Logo Oto Bekas Gorontalo">
+                </a>
             </div>
-        </div>
-    </nav>
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+                <li>
+                    <span class="text-muted">
+                        | &nbsp; Oto Bekas Gorontalo
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- Akhir NAvbar -->
 
     <!-- Breadcrumbs -->
-    <div class="container mt-5">
+    <div class="container">
         <nav>
             <ol class="breadcrumb bg-transparent pl-0">
                 <li class="breadcrumb-item">
-                    <a href="#">Category</a>
+                    <a href="galeri.html">Category</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">Detail Product</li>
             </ol>
@@ -65,135 +59,134 @@
     </div>
     <!-- Akhir Breadcrumbs -->
 
-    <!-- Detail Product -->
-    <section class="detail-product">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <figure class="figure">
-                        <img src="img/product/detail_mobil.png" class="figure-img img-fluid">
-                        <figcaption class="figure-caption product-thumbnail-container d-flex justify-content-between">
-                            <a href=" ">
-                                <img src="img/thumbnail/imh_thumb1.png" alt=" ">
+    <main>
+        <!-- Detail Product -->
+        <section class="section-detail-product">
+            <div class="container">
+                <div class="row">
+                    <div class="gallery col-lg-5">
+                        <div class="xzoom-container">
+                            <img src="img/product/detail_mobil.png" class="xzoom" id="xzoom-default" xoriginal="img/product/detail_mobil.png">
+                        </div>
+                        <div class="xzoom-thumbs product-thumbnail-container d-flex justify-content-between">
+                            <a href="img/product/detail_mobil3.png">
+                                <img src="img/thumbnail/imh_thumb3.png" class="xzoom-gallery" xpreview="img/product/detail_mobil3.png">
                             </a>
-                            <a href=" ">
-                                <img src="img/thumbnail/imh_thumb2.png" alt=" ">
+                            <a href="img/product/detail_mobil2.png">
+                                <img src="img/thumbnail/imh_thumb2.png" class="xzoom-gallery" xpreview="img/product/detail_mobil2.png">
                             </a>
-                            <a href=" ">
-                                <img src="img/thumbnail/imh_thumb3.png" alt=" ">
+                            <a href="img/product/detail_mobil1.png">
+                                <img src="img/thumbnail/imh_thumb1.png" class="xzoom-gallery" xpreview="img/product/detail_mobil1.png">
                             </a>
-                            <a href=" ">
-                                <img src="img/thumbnail/play_preview.png" alt=" ">
+                            <a href="frontend/images/pict_featured.jpg">
+                                <img src="img/thumbnail/play_preview.png" class="xzoom-gallery" xpreview="img/thumbnail/play_preview.png">
                             </a>
-                        </figcaption>
-
-                    </figure>
-                </div>
-                <div class="col-lg-3">
-                    <h3>Daihatsu Xenia</h3>
-                    <p>IDR 90.000.000</p>
-                    <div class="btn-product">
-                        <a href="https://api.whatsapp.com/send?phone=085240996686&text=Saya%20tertarik%20untuk%20membeli%20produk%20ini." target="_BLANK" class="btn btn-warning text-white">Hubungi Whatsapp Penjual</a>
-                        <a class="btn" onclick="telp();" style="background-color: #EAEAEF; color: #ADADAD;">No Telp Penjual</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>Daihatsu Xenia</h3>
+                        <p>IDR 90.000.000</p>
+                        <div class="btn-product">
+                            <a href="https://api.whatsapp.com/send?phone=085240996686&text=Saya%20tertarik%20untuk%20membeli%20produk%20ini." target="_BLANK" class="btn btn-warning text-white">Hubungi Whatsapp Penjual</a>
+                            <a class="btn" onclick="telp();" style="background-color: #EAEAEF; color: #ADADAD;">No Telp Penjual</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Product Description & Review -->
-    <section class="product-description p-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews (20)</a>
-                        </li>
+        <!-- Product Description & Review -->
+        <section class="section-product-description p-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                            </li>
+                            <!-- <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">Reviews (20)</a>
+                            </li> -->
 
-                    </ul>
-                    <div class="tab-content p-3" id="myTabContent">
-                        <div class="tab-pane fade show product-detail active" id="description" role="tabpanel" aria-labelledby="description-tab">
-                            <p>
-                                Merek - daihatsu <br> Model - xenia <br> Tahun - 2016 <br> Jarak tempur- 40.000 km <br> Bahan bakar - Bensin <br> Transmisi - Manual <br> Kelengkapan - surat surat lengkap </p>
-
+                        </ul>
+                        <div class="tab-content p-3" id="myTabContent">
+                            <div class="tab-pane fade show product-detail active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                <p>
+                                    Merek - daihatsu <br> Model - xenia <br> Tahun - 2016 <br> Jarak tempur- 40.000 km <br> Bahan bakar - Bensin <br> Transmisi - Manual <br> Kelengkapan - surat surat lengkap </p>
+                            </div>
+                            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                                Reviews
+                            </div>
 
                         </div>
-                        <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
-                            Reviews
-                        </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- Akhir Product Description & Review -->
+        </section>
+        <!-- Akhir Product Description & Review -->
 
-    <!-- Similar Product -->
-    <section class="similar-product">
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col">
-                    <h4>Produk Terkait</h4>
+        <!-- Similar Product -->
+        <section class="section-similar-product">
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col">
+                        <h4>Produk Terkait</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <figure class="figure">
+                            <img src="img/similar/similar1.png" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Daihatsu Xenia</h6>
+                                        <p>Tahun 2015</p>
+                                    </div>
+                                    <div class="col align-items-center d-flex justify-content-end">
+                                        <p style="font-size: 18px;">IDR 89.000.000</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="figure">
+                            <img src="img/similar/similar2.png" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Daihatsu Xenia</h6>
+                                        <p>Tahun 2018</p>
+                                    </div>
+                                    <div class="col align-items-center d-flex justify-content-end">
+                                        <p style="font-size: 18px;">IDR 92.000.000</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-sm-4">
+                        <figure class="figure">
+                            <img src="img/similar/similar3.png" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">
+                                <div class="row">
+                                    <div class="col">
+                                        <h6>Daihatsu Xenia</h6>
+                                        <p>Tahun 2019</p>
+                                    </div>
+                                    <div class="col align-items-center d-flex justify-content-end">
+                                        <p style="font-size: 18px;">IDR 95.000.000</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <figure class="figure">
-                        <img src="img/similar/similar1.png" class="figure-img img-fluid">
-                        <figcaption class="figure-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <h6>Daihatsu Xenia</h6>
-                                    <p>Tahun 2015</p>
-                                </div>
-                                <div class="col align-items-center d-flex justify-content-end">
-                                    <p style="font-size: 18px;">IDR 89.000.000</p>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-4">
-                    <figure class="figure">
-                        <img src="img/similar/similar2.png" class="figure-img img-fluid">
-                        <figcaption class="figure-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <h6>Daihatsu Xenia</h6>
-                                    <p>Tahun 2018</p>
-                                </div>
-                                <div class="col align-items-center d-flex justify-content-end">
-                                    <p style="font-size: 18px;">IDR 92.000.000</p>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="col-sm-4">
-                    <figure class="figure">
-                        <img src="img/similar/similar3.png" class="figure-img img-fluid">
-                        <figcaption class="figure-caption">
-                            <div class="row">
-                                <div class="col">
-                                    <h6>Daihatsu Xenia</h6>
-                                    <p>Tahun 2019</p>
-                                </div>
-                                <div class="col align-items-center d-flex justify-content-end">
-                                    <p style="font-size: 18px;">IDR 95.000.000</p>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Similar Product -->
+        </section>
+        <!-- Similar Product -->
+    </main>
 
 
     <!-- Footer -->
@@ -241,11 +234,8 @@
     <script src="js/bootstrap.js "></script>
     <script src="js/all.js "></script>
     <script src="js/script.js "></script>
-    <script type="text/javascript">
-        function telp() {
-            swal("Good job!", "HP 082346464631", "success");
-        }
-    </script>
+    <script src="xzoom/xzoom.min.js"></script>
+
 </body>
 
 </html>
